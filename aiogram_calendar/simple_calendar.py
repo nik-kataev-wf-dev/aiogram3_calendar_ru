@@ -1,4 +1,5 @@
 import calendar
+import locale
 from datetime import datetime, timedelta
 
 from aiogram import F
@@ -33,6 +34,7 @@ class SimpleCalendar:
             text=f"{year-1}  <<",
             callback_data=build_data("PREV-YEAR", year, month, 1)
         ))
+        locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
         inline_row.append(InlineKeyboardButton(
             text=f'{calendar.month_name[month]} {str(year)}',
             callback_data=ignore_callback
