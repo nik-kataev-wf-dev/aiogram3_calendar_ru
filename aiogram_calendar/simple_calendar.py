@@ -44,7 +44,7 @@ class SimpleCalendar:
         inline_kb.append(inline_row)
         # Second row - Week Days
         inline_row = []
-        for day in ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]:
+        for day in ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]:
             inline_row.append(InlineKeyboardButton(text=day, callback_data=ignore_callback))
         inline_kb.append(inline_row)
 
