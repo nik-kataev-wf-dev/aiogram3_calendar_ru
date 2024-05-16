@@ -10,12 +10,12 @@ setup(
   license='MIT',
   description='Simple Inline Calendar & Date Selection tool for Aiogram Telegram bots',
   long_description=long_description,
-  author='Roman Poltorabatko (original by Andrew Nikolabay)',
-  author_email='',
+  author='Kataev Nikita (original by Andrew Nikolabay)',
+  author_email='nik.kataev00@gmail.com',
   url='https://github.com/barabum0/aiogram_calendar',
   keywords=['Aiogram', 'Telegram', 'Bots', 'Calendar'],
   install_requires=[
-          'aiogram~=3.0.0b7',
+          'aiogram~=3.4',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',

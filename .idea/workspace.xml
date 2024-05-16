@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d698f64-af0e-4c5b-8dba-f240565513b1" name="Changes" comment="init" />
+    <list default="true" id="3d698f64-af0e-4c5b-8dba-f240565513b1" name="Changes" comment="русификация">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,11 +30,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Nikita/PycharmProjects/Работа/WebFormat/либы/aiogram_calendar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -43,6 +48,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689772997183</updated>
       <workItem from="1689772999461" duration="461000" />
+      <workItem from="1689773468587" duration="1200000" />
+      <workItem from="1689845969504" duration="6000" />
+      <workItem from="1715851947720" duration="144000" />
     </task>
     <task id="LOCAL-00001" summary="delete print">
       <option name="closed" value="true" />
@@ -52,7 +60,31 @@
       <option name="project" value="LOCAL" />
       <updated>1689773054422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1689773486146</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689773486146</updated>
+    </task>
+    <task id="LOCAL-00003" summary="русификация">
+      <option name="closed" value="true" />
+      <created>1689773613083</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689773613083</updated>
+    </task>
+    <task id="LOCAL-00004" summary="русификация">
+      <option name="closed" value="true" />
+      <created>1689773946648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689773946649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,6 +92,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete print" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete print" />
+    <MESSAGE value="init" />
+    <MESSAGE value="русификация" />
+    <option name="LAST_COMMIT_MESSAGE" value="русификация" />
   </component>
 </project>

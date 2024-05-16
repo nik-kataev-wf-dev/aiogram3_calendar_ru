@@ -3,15 +3,18 @@ from datetime import datetime
 
 from aiogram import F
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram.types import CallbackQuery
-
 
 # setting callback_data prefix and parts
 dialog_callback_filter = F.data.startswith('dialog_calendar')
 
 
-def build_data(action: str, year: int, month: int, day: int): return f"dialog_calendar&{action}&{year}&{month}&{day}"
-def process_data(data: str) -> dict: data = data.split("&")[1:]; return {"act": data[0], "year": data[1], "month": data[2], "day": data[3]}
+def build_data(action: str, year: int, month: int, day: int):
+    return f"dialog_calendar&{action}&{year}&{month}&{day}"
+
+
+def process_data(data: str) -> dict:
+    data = data.split("&")[1:]
+    return {"act": data[0], "year": data[1], "month": data[2], "day": data[3]}
 
 
 ignore_callback = build_data("IGNORE", -1, -1, -1)
@@ -25,8 +28,8 @@ class DialogCalendar:
         self.month = month
 
     async def start_calendar(
-        self,
-        year: int = datetime.now().year
+            self,
+            year: int = datetime.now().year
     ) -> InlineKeyboardMarkup:
         inline_kb = []
         # first row - years
@@ -125,8 +128,9 @@ class DialogCalendar:
         if data['act'] == "START":
             await query.message.edit_reply_markup(reply_markup=await self.start_calendar(int(data['year'])))
         if data['act'] == "SET-MONTH":
-            await query.message.edit_reply_markup(reply_markup=await self._get_days_kb(int(data['year']), int(data['month'])))
+            await query.message.edit_reply_markup(
+                reply_markup=await self._get_days_kb(int(data['year']), int(data['month'])))
         if data['act'] == "SET-DAY":
-            await query.message.delete_reply_markup()   # removing inline keyboard
+            await query.message.delete_reply_markup()  # removing inline keyboard
             return_data = True, datetime(int(data['year']), int(data['month']), int(data['day']))
         return return_data
